@@ -1,0 +1,234 @@
+@import "~@alifd/next/variables.scss";
+
+.icon {
+  color: #999;
+}
+
+.searchIcon {
+  margin-right: 5px;
+  color: #999;
+}
+
+.Operation {
+  padding: 10px 10px 5px;
+  border-bottom: 1px dashed #eee;
+
+  .btns {
+    margin-top: 14px;
+    button {
+      margin-left: 10px;
+    }
+  }
+}
+.tips {
+  font-size: 12px;
+  color: #999;
+  padding: 0 8px;
+}
+.save{
+  float: right;
+  padding: 4px;
+  color: #209BFA;
+  cursor: pointer;
+}
+.timePoint{
+  margin-top: 8px;
+  text-align: center;
+}
+/***************** 预约面板 css start **********************/
+.calWrapper {
+  .calOther {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .wh{
+      display: flex;
+      width: 200px;
+      input {
+        cursor: pointer;
+      }
+    }
+    .calTimes{
+      flex: 1;
+      text-align: center;
+      h3{
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        margin: 0;
+      }
+      .calWeek{
+        margin-top: 10px;
+        span{
+          font-size: 18px;
+          color: #333;
+          margin: 0 12px;
+        }
+      }
+    }
+    .utils {
+      width: 200px;
+      text-align: right;
+    }
+  }
+  .calContent {
+    background: #FFFFFF;
+    border: 1px solid rgba(241,242,249,1);
+    box-shadow: 0px 4px 9px 0px rgba(0,0,0,0.08);
+    border-radius: 16px;
+    margin-top: 16px;
+    .calHeader{
+      display: flex;
+      .calTitle {
+        height: 100px;
+        border-right: 1px solid #F2F2F2;
+        border-bottom: 1px solid #F2F2F2;
+        &:first-child {
+          width: 100px;
+          font-size: 36px;
+        }
+        &:last-child {
+          border-right: 0;
+        }
+        width: calc((100% - 100px) / 7);
+        text-align: center;
+        padding: 20px 0;
+        h4{
+          margin: 8px 0;
+          color: #333;
+          font-size: 20px;
+          font-weight: bold;
+          &.calToday {
+            color: #21B8C6;
+          }
+        }
+        h6{
+          margin: 0;
+          font-family: PingFangSC-Regular;
+          color: #999;
+        }
+      }
+    }
+    .calBody{
+      display: flex;
+      
+      .calLeft{
+        width: 100px;
+        .calCol{
+          height: 117px;
+          color: #333;
+          font-size: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-right: 1px solid #F2F2F2;
+          border-bottom: 1px solid #F2F2F2;
+        }
+      }
+      .calRight{
+        display: flex;
+        width: calc(100% - 100px);
+        align-content: flex-start;
+        flex-wrap: wrap;
+        .calCol{
+          width: calc((100% - 32px) / 7);
+          height: 117px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          align-content: baseline;
+          border-radius: 16px;
+          border-top: 4px solid #C3E7EB;
+          background: -webkit-linear-gradient(#F6FEFF,#FFF);
+          margin: 2px;
+          &:nth-child(7n + 1) {
+            margin-left: 4px;
+          }
+          &:nth-child(7n) {
+            margin-right: 4px;
+          }
+          h6{
+            width: 100%;
+            margin: 12px 0 0 0;
+            text-align: center;
+            font-size: 14px;
+            color: #21B8C6;
+          }
+          h5{
+            width: 100%;
+            margin: 10px 0;
+            text-align: center;
+            font-size: 24px;
+            color: #21B8C6;
+            font-weight: bold;
+          }
+          .btn{
+            background: #21B8C6;
+            box-shadow: 0px 2px 4px 0px rgba(33,184,198,0.42);
+            color: #fff;
+            padding: 6px 14px;
+            height: auto;
+            border-radius: 16px;
+            margin-bottom: 10px;
+          }
+        }
+        .full {
+          background: #F2F2F2;
+          border-top: 4px solid #E8E8E8;
+          font-size: 14px;
+          color: #333;
+          font-weight: bold;
+          align-content: center;
+        }
+        .kx {
+          align-content: space-between;
+        }
+        .pd{
+          border-top: 4px solid #F9DEA3;
+          background: -webkit-linear-gradient(#FFF9F6,#FFFCFB);
+          h6{
+            color: #ED8E38;
+          }
+          h5{
+            color: #ED8E38;
+          }
+        }
+      }
+    }
+  }
+}
+.whDialog {
+  width: 600px;
+}
+.holidays {
+  margin: 0 48px;
+  .holiday {
+    margin-bottom: 16px;
+    .split{
+
+    }
+    &>div {
+      margin: 0 16px;
+    }
+  }
+}
+.news{
+  color: #209BFA;
+  cursor: pointer;
+  padding: 0 4px;
+}
+.setting {
+  display: flex;
+  margin: 12px 48px;
+  span{
+    margin-right: 24px;
+  }
+}
+.ItemSpan {
+  color: #666;
+  span{
+    padding: 0 2px;
+  }
+}
+/***************** 预约面板 css end **********************/

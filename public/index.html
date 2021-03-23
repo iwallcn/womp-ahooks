@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://static.4px.com/fpxres/fpx/img/favicon_tech.ico">
+  <title>FB4运营管理</title>
+  <script>
+    /**
+     * 本地开发需要设置接口地址url，权限系统客户端ID，当前登录用户ID
+     * 在测试环境上面用 gudy@4px.com/q1w2e3r4 登录之后，把session复制到该应用下，即可访问测试环境接口
+     **/
+    window.FBF = {
+      url: 'http://components.test.i4px.com/uedFrameComponent/innerUedInfo',
+      clientId: 'EC8xmuKPY6Iy50VR', // 权限系统客户端ID（必传）
+      userId: '64c4273c6b63494bbf354ce88ded7f66', // 当前登录用户的ID（必传）
+      workbenchType: 'WBNM4BE' // 工作台编号（员工工作台：WBNM4BE，IT工作台：WBFYK4U，外部工作台：WBEXTER）
+    };
+  </script>
+</head>
+
+<body>
+  <div id="ice-container"></div>
+</body>
+
+</html>

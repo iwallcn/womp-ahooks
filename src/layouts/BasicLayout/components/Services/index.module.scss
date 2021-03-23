@@ -1,0 +1,14 @@
+.link {
+  a {
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    color: $color-white;
+    padding-left: 10px;
+    padding-right: 10px;
+    i {
+      margin-right: 5px;
+    }
+  }
+}
